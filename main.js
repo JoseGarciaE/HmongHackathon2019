@@ -11,9 +11,10 @@ function Toys(turnOn){
     }
 
     for(var element in x){
-        classes(element, classToAdd, classToRemove);
+        console.log(x[element]);
+        classes(x[element], classToAdd, classToRemove);
     }
-    
+
     Toys(false);
     Medicine(false);
     Food(false);
@@ -32,7 +33,8 @@ function Music(turnOn){
     }
 
     for(var element in x){
-        classes(element, classToAdd, classToRemove);
+        console.log(x[element]);
+        classes(x[element], classToAdd, classToRemove);
     }
 
     Toys(false);
@@ -44,6 +46,7 @@ function Food(turnOn){
     var  x = document.getElementsByClassName("foodId");
     var classToRemove;
     var classToAdd;
+
     if(turnOn){
         classToRemove = 'fillIn';
         classToAdd = 'food';
@@ -51,9 +54,10 @@ function Food(turnOn){
         classToRemove = 'food';
         classToAdd = 'fillIn';
     }
-
+    
     for(var element in x){
-        classes(element, classToAdd, classToRemove);
+        console.log(x[element]);
+        classes(x[element], classToAdd, classToRemove);
     }
 
     Toys(false);
@@ -62,7 +66,7 @@ function Food(turnOn){
 }
 
 function Medicine(turnOn){
-    var  x = document.getElementsByClassName("medinceId");
+    var  x = document.getElementsByClassName("medicineId");
     var classToRemove;
     var classToAdd;
     if(turnOn){
@@ -72,9 +76,11 @@ function Medicine(turnOn){
         classToRemove = 'medicine';
         classToAdd = 'fillIn';
     }
+console.log(x)
     for(var element in x){
-        classes(element, classToAdd, classToRemove);
-    }
+        console.log(x[element]);
+        classes(x[element], classToAdd, classToRemove);
+    }   
         
     Toys(false);
     Food(false);
@@ -82,8 +88,8 @@ function Medicine(turnOn){
 }
 
 function classes (element, ClasstoAdd, classToRemove){
-    element.classList.add("ClasstoAdd")
-    element.classList.remove("classToRemove")
+    element.classList.add(ClasstoAdd)
+    element.classList.remove(classToRemove)
 }
 
 function reset(){
