@@ -6,18 +6,14 @@ function Toys(turnOn){
         classToRemove = 'fillIn';
         classToAdd = 'toys';
     }else{
-        classToRemove = 'food';
-        classToAdd = 'toys';
+        classToRemove = 'toys';
+        classToAdd = 'fillIn';
     }
 
-    for(var element in x){
-        console.log(x[element]);
-        classes(x[element], classToAdd, classToRemove);
-    }
+    for(var index = 0; index < x.length-1; index++){
+        classes(x[index], classToAdd, classToRemove);
+    }   
 
-    Toys(false);
-    Medicine(false);
-    Food(false);
 }
 
 function Music(turnOn){
@@ -28,18 +24,14 @@ function Music(turnOn){
         classToRemove = 'fillIn';
         classToAdd = 'music';
     }else{
-        classToRemove = 'food';
-        classToAdd = 'music';
+        classToRemove = 'music';
+        classToAdd = 'fillIn';
     }
 
-    for(var element in x){
-        console.log(x[element]);
-        classes(x[element], classToAdd, classToRemove);
-    }
+    for(var index = 0; index < x.length-1; index++){
+        classes(x[index], classToAdd, classToRemove);
+    }   
 
-    Toys(false);
-    Medicine(false);
-    Food(false);
 }
 
 function Food(turnOn){
@@ -55,14 +47,11 @@ function Food(turnOn){
         classToAdd = 'fillIn';
     }
     
-    for(var element in x){
-        console.log(x[element]);
-        classes(x[element], classToAdd, classToRemove);
-    }
+    for(var index = 0; index < x.length-1; index++){
+        classes(x[index], classToAdd, classToRemove);
+    }   
 
-    Toys(false);
-    Medicine(false);
-    Music(false);
+    
 }
 
 function Medicine(turnOn){
@@ -76,15 +65,11 @@ function Medicine(turnOn){
         classToRemove = 'medicine';
         classToAdd = 'fillIn';
     }
-console.log(x)
-    for(var element in x){
-        console.log(x[element]);
-        classes(x[element], classToAdd, classToRemove);
+
+    for(var index = 0; index < x.length-1; index++){
+        classes(x[index], classToAdd, classToRemove);
     }   
-        
-    Toys(false);
-    Food(false);
-    Music(false);
+
 }
 
 function classes (element, ClasstoAdd, classToRemove){
@@ -93,19 +78,34 @@ function classes (element, ClasstoAdd, classToRemove){
 }
 
 function reset(){
-    var x = document.getElementsByClassName("col-lg-1");
+   Food(false);
+   Medicine(false);
+   Toys(false);
+   Music(false);
 }
 
 function changeColors(items){
 
     if(items == 'food'){
         Food(true);
+        Toys(false);
+        Medicine(false);
+        Music(false);
     }else if(items == 'medince'){
         Medicine(true);
+        Toys(false);
+        Food(false);
+        Music(false);
     }else if(items == 'music'){
         Music(true);
+        Toys(false);
+        Medicine(false);
+        Food(false);
     }else if(items == 'toys'){
         Toys(true);
+        Music(false);
+        Medicine(false);
+        Food(false);
     }
 
 }
