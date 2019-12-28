@@ -1,0 +1,54 @@
+.fillIn {
+    background-color: grey;
+    margin: 10px;
+  }
+
+  .ContainerMargins {
+    margin-top: 10px;
+    margin-left: 10%;
+  }
+
+  .mainstage{
+    height: 100px;
+    width: 1000px;
+    margin-left: 30%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-family: sans-serif
+  }
+
+  .indoorStage{
+    margin-left: 1px;
+    position: relative;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-family: sans-serif
+  }
+
+  .booth{
+    height: 50px;
+    width: 50;
+  }
+
+  .food{
+    background-color: green;
+    margin: 10px;
+  }
+
+  .toys{
+    background-color: purple;
+    margin: 10px;
+  }
+
+  .music{
+    background-color: blue;
+    margin: 10px;
+  }
+
+  .medicine{
+    background-color: orangered;
+    margin: 10px;
+  }
