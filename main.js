@@ -50,8 +50,6 @@ function Food(turnOn){
     for(var index = 0; index < x.length-1; index++){
         classes(x[index], classToAdd, classToRemove);
     }   
-
-    
 }
 
 function Medicine(turnOn){
@@ -69,7 +67,6 @@ function Medicine(turnOn){
     for(var index = 0; index < x.length-1; index++){
         classes(x[index], classToAdd, classToRemove);
     }   
-
 }
 
 function classes (element, ClasstoAdd, classToRemove){
@@ -107,8 +104,28 @@ function changeColors(items){
         Medicine(false);
         Food(false);
     }
-
 }
+
+function generateMusicPopUp() {
+    var popup = document.getElementById("PopupMusic");
+    popup.classList.toggle("show");
+  }
+
+  function generateFoodPopUp() {
+    var popup = document.getElementById("PopupFood");
+    popup.classList.toggle("show");
+  }
+
+  function generateMedicinePopUp() {
+    var popup = document.getElementById("PopupMedicine");
+    popup.classList.toggle("show");
+  }
+
+  function generateToysPopUp() {
+    var popup = document.getElementById("PopupToys");
+    popup.classList.toggle("show");
+  }
+
 
     
 

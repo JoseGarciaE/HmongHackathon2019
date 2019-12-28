@@ -106,7 +106,6 @@
 
         <div class="row">
           <div class="musicId booth fillIn border border-dark rounded-sm col col-lg-1" style="margin-left: 10%;">
-           
           </div>
 
           <div class="toysId booth fillIn border border-dark rounded-sm col col-lg-1">
@@ -147,13 +146,14 @@
            
           </div>
 
-          <div class="musicId booth fillIn border border-dark rounded-sm col col-lg-1">
-           
+          <div class="musicId booth fillIn border border-dark rounded-sm col col-lg-1 popup" onclick="generateMusicPopUp()">
+            <span class="popuptext" id="PopupMusic"><img src="sounders.png" alt="" style='height: 100px;width: 100px;'></span>
           </div>
           <div class=" col col-lg-4">
             
           </div>
-          <div class=" medicineId booth fillIn border border-dark rounded-sm col col-lg-1">
+          <div class=" medicineId booth fillIn border border-dark rounded-sm col col-lg-1 popup" onclick="generateMedicinePopUp()"> 
+            <span class="popuptext" id="PopupMedicine"><img src="medicine.png" alt="" style='height: 100px;width: 100px;'></span>
            
           </div>
           <div class="toysId booth fillIn border border-dark rounded-sm  col col-lg-1">
@@ -189,14 +189,18 @@
           <div class="foodId booth fillIn border border-dark rounded-sm col col-lg-1">
           </div>
 
-          <div class="toysId booth fillIn border border-dark rounded-sm col col-lg-1">
+          <div class="toysId booth fillIn border border-dark rounded-sm col col-lg-1 popup" onclick="generateToysPopUp()"> 
+            <span class="popuptext" id="PopupToys"><img src="hmongclothes.png" alt="" style='height: 100px;width: 100px;'></span>
           </div>
 
           <div class="toysId booth fillIn border border-dark rounded-sm  col col-lg-1">
           </div>
 
           <div class="medicineId booth fillIn border border-dark rounded-sm col col-lg-1"></div>
-          <div class="foodId booth fillIn border border-dark rounded-sm col col-lg-1"> </div>
+
+          <div class="foodId booth fillIn border border-dark rounded-sm col col-lg-1 popup" onclick="generateFoodPopUp()"> 
+            <span class="popuptext" id="PopupFood"><img src="eggroll.png" alt="" style='height: 100px;width: 100px;'></span>
+           </div>
 
           <div class="musicId booth fillIn border border-dark rounded-sm col col-lg-1">
 
