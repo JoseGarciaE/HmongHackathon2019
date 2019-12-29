@@ -103,7 +103,7 @@ function changeColors(items){
         Toys(false);
         Medicine(false);
         Music(false);
-    }else if(items == 'medicine'){
+    }else if(items == 'medince'){
         Medicine(true);
         Toys(false);
         Food(false);
@@ -140,3 +140,7 @@ function generateMusicPopUp() {
     var popup = document.getElementById("PopupToys");
     popup.classList.toggle("show");
   }
+
+
+    
+
