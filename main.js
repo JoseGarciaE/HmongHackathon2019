@@ -103,7 +103,7 @@ function changeColors(items){
         Toys(false);
         Medicine(false);
         Music(false);
-    }else if(items == 'medince'){
+    }else if(items == 'medicine'){
         Medicine(true);
         Toys(false);
         Food(false);

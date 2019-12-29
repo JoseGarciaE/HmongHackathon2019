@@ -1,5 +1,5 @@
 .fillIn {
-    background-color: grey;
+    background-color: lightblue;
     margin: 10px;
   }
 
@@ -9,6 +9,7 @@
   }
 
   .mainstage{
+    background-color: lightcoral;
     height: 100px;
     width: 1000px;
     margin-left: 30%;
@@ -19,6 +20,7 @@
   }
 
   .indoorStage{
+    background-color: lightcoral ;
     margin-left: 1px;
     position: relative;
     height: 100px;
